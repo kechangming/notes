@@ -1,1 +1,0 @@
-Construction of 3D volcano plot includes [the kinetics of steam reforming of methanol](./kinetics_of_steam_reforming_of_methanol/Establishment of microkinetics of Steam methanol reforming.md) and [adsorption energies prediction by deep learning](./adsorption_energies_prediction_by_DL/Adsorption Energies Prediction by Deep Learning.md).
