@@ -3,23 +3,31 @@
 #include <ctype.h>
 #include "prefactor.h"
 #include<math.h>
-/*程序用于计算给定温度情况下基元反应的前置因子，输入文件参数：时间单位为 S,长度单位为m,质量单位为相对质量,活化能单位为eV/atom，site的为每平方米位点的个数。
- *例如：对于表面催化反应，单位面积的结点数为 /cm^2.
- *输入文件的格式为freq.dat格式。
- *例子1：
+/* This code is used to calculate the prefactor of elementary reactions. unit of time is sec, length is m, weight is relative atomic mass, energy is eV/atom, surface site density is /cm^2。
+ *
+ *the inputs are freq.dat type file.
+ *Usage: prefactor freq_ini.dat freq_trans.dat  <temperature> <energy>  # Here, freq_ini.dat is the frequency file of reactant, freq_trans.dat is the frequency file of transition state, unit of temperature is K, <energy> is not available in this version.
+ *example in freq.dat
+ *
+ * forth parameter indicates the mode of motion: 
+ * 
+ * 4 parameters in a row
+ *-1 indicates mode along reaction coordination, 
+ *> 0 indicates vibrational, the value is the mass of molecules
+ * 
+ * 5 parameters for rotational mode
+ * forth parameter is the symmery of mode
+ * fifth parameter is the rotational inertia
+ *case 1：
  *frequency cm^{-1} ... 2
- *例子2：
+ *case 2：
  *frequency cm^{-1} ... 2 8.9
- *每行第一个参数为振动频率，若参数个数为四个，第四个参数等于0，则为振动；
- *                          大于0，则为平动，参数为振动系统的质量（如：第一个例子的2）；
- *                          等于-1，为过渡态虚频。
- *                          若参数个数为五个，第四个参数为对称参数，第五个参数为某一转动模的转动惯量（第二个例子）。
 */
 int main(int argc,char *argv[])
 {
 	if (argc!=5&&argc!=6)
 	{
-		printf("Usage: prefactor.out <minus> <transi> <temperature> <energy> [site]\n");
+		printf("Usage: prefactor <minus> <transi> <temperature> <energy>\n");
 		return NULL;
 	}
 	double site=1;
