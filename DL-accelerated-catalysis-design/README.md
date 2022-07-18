@@ -10,7 +10,7 @@ Here, we give a tutorial for construction of a 3D volcano plot of steam reformin
 Include 4 parts:
 1. Construct the microkinetics of steam reforming of methanol with EEF effect
 2. Simplify the microkinetics and derive a simplified kinetics of SRM with scaling relationship.
-3. Predict the O and C adsorption assisted by deep learning.
+3. Predict the O and C adsorption energies assisted by deep learning.
 4. Polt the 3D volcano plot.
 
 Details in the subfolders.
