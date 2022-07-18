@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1243012,      20515]
-NotebookOptionsPosition[   1242439,      20496]
-NotebookOutlinePosition[   1242829,      20513]
-CellTagsIndexPosition[   1242786,      20510]
+NotebookDataLength[   1242839,      20512]
+NotebookOptionsPosition[   1242266,      20493]
+NotebookOutlinePosition[   1242656,      20510]
+CellTagsIndexPosition[   1242613,      20507]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -29,11 +29,8 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"data", "=", 
    RowBox[{"Import", "[", 
-    RowBox[{
-    "\"\<C:\\\\Users\\\\rulaishenzhang\\\\OneDrive - \:897f\:6e56\:5927\:5b66\
-\\\\\:6587\:6863\\\\GitHub\\\\DL-accelerated-catalysis-design\\\\\
-microkinetics_of_steam_methanol_reforming\\\\3d_volcano_plot\\\\newn_T473K_\
-interp.csv\>\"", ",", "\"\<CSV\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"\"\<.\\\\newn_T473K_interp.csv\>\"", ",", "\"\<CSV\>\""}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"opf", "[", "f_", "]"}], ":=", 
@@ -360,9 +357,9 @@ interp.csv\>\"", ",", "\"\<CSV\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]",
    3.8643529472260523`*^9}, {3.864352989346423*^9, 3.8643529941675043`*^9}, {
    3.864353090590901*^9, 3.864353116546547*^9}, {3.864353157436207*^9, 
    3.8643531734513826`*^9}, 3.8643533058243437`*^9, {3.8643534605418744`*^9, 
-   3.864353462379958*^9}},
- CellLabel->
-  "In[166]:=",ExpressionUUID->"746b7660-d522-47bc-a183-f6303a0a1508"],
+   3.864353462379958*^9}, {3.86711438650638*^9, 
+   3.8671143890025587`*^9}},ExpressionUUID->"746b7660-d522-47bc-a183-\
+f6303a0a1508"],
 
 Cell[BoxData[
  Graphics3DBox[Raster3DBox[CompressedData["
@@ -20495,7 +20492,7 @@ eVVxSqGeTsZOFw6gPinud31jN1HkvqxL2DPgUZKQGKaN+rtNcF55jfNedHqP
 }, Open  ]]
 },
 WindowSize->{1904, 975},
-WindowMargins->{{-1928, Automatic}, {-29, Automatic}},
+WindowMargins->{{-313, Automatic}, {-270, Automatic}},
 Magnification:>0.9 Inherited,
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:67086\
 \:65e5)",
@@ -20514,8 +20511,8 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 156, 3, 26, "Input",ExpressionUUID->"a945d77b-24be-4977-b4ab-b498e447fce2"],
 Cell[CellGroupData[{
-Cell[739, 27, 16377, 337, 525, "Input",ExpressionUUID->"746b7660-d522-47bc-a183-f6303a0a1508"],
-Cell[17119, 366, 1225304, 20127, 403, "Output",ExpressionUUID->"3ab15325-fca9-4e22-a15d-8b13fa3fcfd1"]
+Cell[739, 27, 16204, 334, 525, "Input",ExpressionUUID->"746b7660-d522-47bc-a183-f6303a0a1508"],
+Cell[16946, 363, 1225304, 20127, 371, "Output",ExpressionUUID->"3ab15325-fca9-4e22-a15d-8b13fa3fcfd1"]
 }, Open  ]]
 }
 ]
