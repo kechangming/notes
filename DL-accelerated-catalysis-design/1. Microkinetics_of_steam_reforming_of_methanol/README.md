@@ -2,7 +2,7 @@
 tags: [Import-356b]
 title: Establishment of microkinetics of Steam methanol reforming
 created: '2022-06-16T12:00:57.989Z'
-modified: '2022-07-18T08:03:19.845Z'
+modified: '2022-07-18T08:05:28.670Z'
 ---
 
 
@@ -18,7 +18,7 @@ Here, $k_{\rm B}$ is the Boltzmann constant, $T$ the temperature, $h$ Planck's c
 For the vibrational partition function, a typical INCAR (input file of [VASP](https://www.vasp.at/wiki/index.php/The_VASP_Manual) for vibrational frequency calculations is [INCAR_freq](./pre-exponent_factors/INCAR_freq), and the main output file is [freq.dat](./k_24.dat). The code in [prefactor_g++](./pre-exponent_factors/prefactor_g++) and [nonactive_prefactor_g++](./pre-exponent_factors/nonactive_prefactor_g++) can be used to calculate pre-exponent factor directly from a freq.dat file. For example, we can obtained the pre-exponent factors of ${\rm C^*+O^*\rightarrow CO^* + ^*}$ vs. temperaturr by [T_prefactor.sh](./T_prefactor.sh) reactants/[freq.dat](./freq_ini) transition/[freq.dat](./freq_trans) as follows:
 <center>
 
-| Temperature | $A'\cdot T^b$ |
+| Temperature (K) | $A'\cdot T^b$ |
 |-------------|-------------|
 |673 | 3.31043e+13|
 |723 | 3.32805e+13|
