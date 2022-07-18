@@ -45,6 +45,5 @@ We report a new all-nonflammable-ingredient aqueous electrolyte via hybridizing 
 **My contribution to this project is:**  Theoretically found the core-shell-like strucutre in methylurea-hybridation water in salt electrolyte based on _ab initio_ molecular dynamics.
 ![](./figure_in_research_introduction/joule2022_2.jpg) 
 
-8. Juner Chen; Han Wang; **Changming Ke**; Shi Liu*; Jianghui Wang*; Design localized salt-concentrated electrolytes via donor number and solubility **(Under review, co-first author)**  
-We find that the dielectric constant of solvent, a widely used parameter for electrolyte design, does not serve as a useful screening criterion for diluents. Instead, supported by a thorough investigation involving ~700 samples, a local concentrated electrolyte design principle for various Li-salts is developed based on Gutmann’s donor number (DN): the primary solvent has DN > 10 and the diluent has DN < 10.    
+8. Juner Chen; Han Wang; **Changming Ke**; Shi Liu*; Jianghui Wang*; Design localized salt-concentrated electrolytes via donor number and solubility **(Under review, co-first author)**     
 **My contribution to this project is:** Revealed a linear scaling relationship between DN and the Li-solvent interaction strength, elucidating the correlation between DN and electrolyte structures by the first-principles calculations.
