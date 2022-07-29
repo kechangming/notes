@@ -1,14 +1,15 @@
 ---
 tags: [Import-356b]
-title: Establishment of microkinetics of Steam methanol reforming
+title: Microkinetics of Steam Reforming of Methanol
 created: '2022-06-16T12:00:57.989Z'
 modified: '2022-07-18T08:05:28.670Z'
 ---
 
 
-# Establishment_of_microkinetics_of_methanol_steam_reforming
-## Step1. Transition state search by CL-NEB and Dimer method ($E_{\rm a}$)
-The typical INCAR for CL-NEB and Dimer method is [INCAR_neb](./INCAR_neb) and [INCAR_dimer](./INCAR_dimer).
+# Microkinetics of Steam Reforming of Methanol
+## Step1. Transition state search by CL-NEB and Dimer methods
+For a given elementary reaction, we identify the transition state with CL-NEB and Dimer methods and then compute the activation energy ($E_{\rm a}$) with the transition state theory.
+Typical INCAR files of VASP for CL-NEB and Dimer methods are [INCAR_neb](./INCAR_neb) and [INCAR_dimer](./INCAR_dimer), respectively. 
 
 ## Step2. Pre-exponent factor calculations ($A' \cdot T^b$)
 
