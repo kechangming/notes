@@ -7,16 +7,16 @@ modified: '2022-07-18T08:05:28.670Z'
 
 
 # Microkinetics of Steam Reforming of Methanol
-## Step1. Transition state search by CL-NEB and Dimer methods
+## Step 1. Transition state search by CL-NEB and Dimer methods
 For a given elementary reaction, we identify the transition state with CL-NEB and Dimer methods and then compute the activation energy ($E_{\rm a}$) with the transition state theory.
 Typical INCAR files of VASP for CL-NEB and Dimer methods are [INCAR_neb](./INCAR_neb) and [INCAR_dimer](./INCAR_dimer), respectively. 
 
-## Step2. Pre-exponent factor calculations ($A' \cdot T^b$)
+## Step 2. Pre-exponent factor calculations ($A' \cdot T^b$)
 
-Acoording to the [transition state theory](http://websites.umich.edu/~elements/03chap/html/transition/index.htm), the reaction rate constant of elementary reaction is<center> $k=\frac{k_BT}{h} \frac{Q'}{Q_R} \cdot {\rm exp}(-\frac{E_{\rm a}}{{\rm R}T})=A'\cdot T^b\cdot {\rm exp}(-\frac{E_{\rm a}}{{\rm R}T})$  </center>
-Here, $k_{\rm B}$ is the Boltzmann constant, $T$ the temperature, $h$ Planck's constant, $Q'$ the partition function of the transition state excluding the motion along the reaction coordinate, $Q_{\rm R}$ the partition function of the reactant, $E_{\rm a}$ the activation energy, and ${\rm R}$ the ideal gas constant. Partition function of modes is obtained from below table: <center><img src="./pre-exponent_factors/partition_function.png" width="70%"> </center> 
+According to the [transition state theory](http://websites.umich.edu/~elements/03chap/html/transition/index.htm), the reaction rate constant of elementary reaction is<center> $k=\frac{k_BT}{h} \frac{Q'}{Q_R} \cdot {\rm exp}(-\frac{E_{\rm a}}{{\rm R}T})=A'\cdot T^b\cdot {\rm exp}(-\frac{E_{\rm a}}{{\rm R}T})$  </center>
+Here, $k_{\rm B}$ is the Boltzmann constant, $T$ the temperature, $h$ Planck's constant, $Q'$ the partition function of the transition state excluding the motion along the reaction coordinate, $Q_{R}$ the partition function of the reactant, $E_{\rm a}$ the activation energy, and ${\rm R}$ the ideal gas constant. Partition functions for different types of motions are obtained from the following table: <center><img src="./pre-exponent_factors/partition_function.png" width="70%"> </center> 
 
-For the vibrational partition function, a typical INCAR (input file of [VASP](https://www.vasp.at/wiki/index.php/The_VASP_Manual) for vibrational frequency calculations is [INCAR_freq](./pre-exponent_factors/INCAR_freq), and the main output file is [freq.dat](./k_24.dat). The code in [prefactor_g++](./pre-exponent_factors/prefactor_g++) and [nonactive_prefactor_g++](./pre-exponent_factors/nonactive_prefactor_g++) can be used to calculate pre-exponent factor directly from a freq.dat file. For example, we can obtained the pre-exponent factors of ${\rm C^*+O^*\rightarrow CO^* + ^*}$ vs. temperaturr by [T_prefactor.sh](./T_prefactor.sh) reactants/[freq.dat](./freq_ini) transition/[freq.dat](./freq_trans) as follows:
+For the vibrational partition function, a typical INCAR (input file of [VASP](https://www.vasp.at/wiki/index.php/The_VASP_Manual)) for vibrational frequency calculations is [INCAR_freq](./pre-exponent_factors/INCAR_freq), and the main output file is [freq.dat](./k_24.dat). The codes [prefactor_g++](./pre-exponent_factors/prefactor_g++) and [nonactive_prefactor_g++](./pre-exponent_factors/nonactive_prefactor_g++) can be used to calculate the pre-exponent factor directly from a [freq.dat](./k_24.dat) file. For example, we can obtain the temperature-dependent pre-exponent factors of ${\rm C^*+O^*\rightarrow CO^* + ^*}$ using [T_prefactor.sh](./T_prefactor.sh), reactants/[freq.dat](./freq_ini), and transition/[freq.dat](./freq_trans).
 <center>
 
 | Temperature (K) | $A'\cdot T^b$ |
@@ -28,12 +28,12 @@ For the vibrational partition function, a typical INCAR (input file of [VASP](ht
 |873 | 3.36820e+13|
 |923 | 3.37836e+13|
 |973 | 3.38731e+13|
-</center>
-Then its temperature dependence is fitted as $A'\cdot T^b$.
+|</center>||
+|The temperature dependence of the pre-exponent factors is fitted as $A'\cdot T^b$.||
 
-## Step3. Microkinetic calculations 
+## Step 3. Microkinetic modeling
 
- Use the rate constant of elementary reaction as inputs to contruct a [input file of CHEMKIN](./input_of_chemkin/surf_e0). And the conditions is setted to the experimental conditions of [Liu _et al._](https://www.sciencedirect.com/science/article/pii/S0920586117305631?via%3Dihub): feed rate is 10 min/cc, catalyst surface is about 0.14 m$^2$. And a model file including all condition set is supplied in [the CHEMKIN model file](./input_of_chemkin/steam_methanol_reforming.ckprj). The calculation results are in good agreement with experiments:
+We use the rate constants of elementary reactions as inputs to construct an input file of CHEMKIN, [surf_e0](./input_of_chemkin/surf_e0). The reaction conditions are the same as the experimental conditions reported in [Liu _et al._](https://www.sciencedirect.com/science/article/pii/S0920586117305631?via%3Dihub): the feed rate is 10 min/cc and the catalyst surface area is about 0.14 m$^2$. A sample file including all other settings is supplied in [steam_methanol_reforming.ckprj](./input_of_chemkin/steam_methanol_reforming.ckprj). The results from the microkinetic modeling are in good agreement with experiments as shown in the following figure:
  ![](./microkinetics_vs_experiment.jpg).
 
-The input file of SRM under specified electric field {-0.5..0.5 V/angstrom} is also supplied in [input_file_CHEMKIN](./input_of_chemkin), they are generated by the [cheminp_out.sh](./cheminp_out.sh)
+The CHEMKIN input files for the microkinetic modeling of SRM under specified electric fields are also supplied, and they are generated using the script [cheminp_out.sh](./cheminp_out.sh).
