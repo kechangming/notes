@@ -27,7 +27,7 @@ Then its temperature dependence is fitted as $A'\cdot T^b$.
 
 ## Step3. Microkinetics
 
-We then use the rate constants of elementary reactions as inputs to construct a [input file of CHEMKIN](./input_of_chemkin/surf_e0). The reaction conditions are taken from the experimental work of [Liu _et al._](https://www.sciencedirect.com/science/article/pii/S0920586117305631?via%3Dihub): feed rate is 10 min/cc and the catalyst surface is about 0.14 m$^2$. A sample model file including all conditions is supplied in [the CHEMKIN model file](./input_of_chemkin/steam_methanol_reforming.ckprj). The results from the microkinetic modeling agree well with experiments:
+We then use the rate constants of elementary reactions as inputs to construct a [input file of CHEMKIN](./input_of_chemkin/surf_e0). The reaction conditions are taken from the experimental work of [Liu _et al._](https://www.sciencedirect.com/science/article/pii/S0920586117305631?via%3Dihub): feed rate is 10 min/cc and the catalyst surface is about 0.14 ${\rm m^2}$. A sample model file including all conditions is supplied in [the CHEMKIN model file](./input_of_chemkin/steam_methanol_reforming.ckprj). The results from the microkinetic modeling agree well with experiments:
  ![](./microkinetics_vs_experiment.jpg).
 
 A CHEMKIN input file for modeling SRM under various electric fields is also provided as [input_file_CHEMKIN](./input_of_chemkin), and they are generated using the [cheminp_out.sh](./cheminp_out.sh) script.
