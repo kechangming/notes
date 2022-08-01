@@ -1,11 +1,3 @@
----
-tags: [Import-356b]
-title: Microkinetics of Steam Reforming of Methanol
-created: '2022-06-16T12:00:57.989Z'
-modified: '2022-07-18T08:05:28.670Z'
----
-
-
 # Microkinetics of Steam Reforming of Methanol
 ## Step 1. Transition state search by CL-NEB and Dimer methods
 For a given elementary reaction, we identify the transition state with CL-NEB and Dimer methods and then compute the activation energy ($E_{\rm a}$) with the transition state theory.
