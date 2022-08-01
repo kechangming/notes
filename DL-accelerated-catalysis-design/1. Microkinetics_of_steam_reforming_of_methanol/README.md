@@ -10,7 +10,7 @@ Here, $k_{\rm B}$ is the Boltzmann constant, $T$ the temperature, $h$ Planck's c
 
 The rate constant $k$ computed from DFT and transition state theory is fitted to the form of $k=A'T^b\exp(-\frac{\Delta E_{a}}{{\rm R}T})$ where $A'$ is a temperature-independent parameter and $T^b$ describes the temperature dependence of the frequency factor.
 
-A typical INCAR for vibrational frequency calculations is [INCAR_freq](./pre-exponent_factors/INCAR_freq), and the main output file is [freq.dat](./k_24.dat). The codes [prefactor_g++](./pre-exponent_factors/prefactor_g++) and [nonactive_prefactor_g++](./pre-exponent_factors/nonactive_prefactor_g++) can be used to calculate the pre-exponent factor directly with the [freq.dat](./k_24.dat) file. For example, we can obtained the pre-exponent factors of ${\rm C^*+O^* CO^* + ^*}$ vs. temperature using [T_prefactor.sh](./T_prefactor.sh) and [freq.dat](./freq_ini) of reactants and [freq.dat](./freq_trans) of the transition state as follows:
+A typical INCAR for vibrational frequency calculations is [INCAR_freq](./pre-exponent_factors/INCAR_freq), and the main output file is [freq.dat](./k_24.dat). The codes [prefactor_g++](./pre-exponent_factors/prefactor_g++) and [nonactive_prefactor_g++](./pre-exponent_factors/nonactive_prefactor_g++) can be used to calculate the pre-exponent factor directly with the [freq.dat](./k_24.dat) file. For example, we can obtained the pre-exponent factors of ${\rm C^*+O^* \rightarrow CO^* + ^*}$ vs. temperature using [T_prefactor.sh](./T_prefactor.sh) and [freq.dat](./freq_ini) of reactants and [freq.dat](./freq_trans) of the transition state as follows:
 <center>
 
 | Temperature (K) | $A'\cdot T^b$ |
