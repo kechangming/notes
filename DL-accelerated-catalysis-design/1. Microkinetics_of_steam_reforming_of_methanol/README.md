@@ -3,7 +3,7 @@
 For a given elementary reaction, we identify the transition state with CL-NEB and Dimer methods and then compute the activation energy $E_{\rm a}$ with the transition state theory.
 Typical INCAR files of VASP for CL-NEB and Dimer methods are [INCAR_neb](./INCAR_neb) and [INCAR_dimer](./INCAR_dimer), respectively. 
 
-## Step 2. Pre-exponent factor calculations ($A' \cdot T^b$)
+## Step 2. Pre-exponent factor calculations ($A'\cdot T^b$)
 
 According to the [transition state theory](http://websites.umich.edu/~elements/03chap/html/transition/index.htm), the reaction rate constant of elementary reaction is<center> $k=\frac{k_BT}{h} \frac{Q'}{Q_{\rm R}} \cdot {\rm exp}(-\frac{E_{\rm a}}{{\rm R}T})=A'\cdot T^b\cdot {\rm exp}(-\frac{E_{\rm a}}{{\rm R}T})$  </center>
 Here, $k_{\rm B}$ is the Boltzmann constant, $T$ the temperature, $h$ Planck's constant, $Q'$ the partition function of the transition state excluding the motion along the reaction coordinate, $Q_{\rm R}$ the partition function of the reactant, $E_{\rm a}$ the activation energy, and ${\rm R}$ the ideal gas constant. Partition functions for different types of motions are obtained from the following table: 
