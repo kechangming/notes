@@ -1,6 +1,6 @@
 # Microkinetics of Steam Reforming of Methanol
 ## Step 1. Transition state search by CL-NEB and Dimer methods
-For a given elementary reaction, we identify the transition state with CL-NEB and Dimer methods and then compute the activation energy ($E_{\rm a}$) with the transition state theory.
+For a given elementary reaction, we identify the transition state with CL-NEB and Dimer methods and then compute the activation energy $E_{\rm a} with the transition state theory.
 Typical INCAR files of VASP for CL-NEB and Dimer methods are [INCAR_neb](./INCAR_neb) and [INCAR_dimer](./INCAR_dimer), respectively. 
 
 ## Step 2. Pre-exponent factor calculations ($A' \cdot T^b$)
