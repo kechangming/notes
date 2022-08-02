@@ -15,7 +15,7 @@ The databases of C * and O* adsorption energies on CsCl-type binary alloys are p
 <img src="./error_in_training.png" width="50%"> </span>
 
 #### Validation
-<p> <img src="./validation_of_O.png" width="50%"><img src="./validation_of_C.png" width="50%"> </p>
+<p> <img src="./validation_of_O.png" width="40%"><img src="./validation_of_C.png" width="40%"> </p>
 
 ## Step 3. Adsorption energy prediction with trained DNN models 
 Simply run the python script  [NNPredict.py](./NNPredict.py). The required input files include a [dat](./properties_of_alloys.dat) file that describes the properties of alloys and trained [DNN model files](model_file_C.h5). 
