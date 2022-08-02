@@ -20,8 +20,8 @@ For the vibrational partition function, a typical INCAR (input file of [VASP](ht
 |873 | 3.36820e+13|
 |923 | 3.37836e+13|
 |973 | 3.38731e+13|
-|</center>||
-|The temperature dependence of the pre-exponent factors is fitted as $A'\cdot T^b$.||
+</center>
+The temperature dependence of the pre-exponent factors is fitted as $A'\cdot T^b$.
 
 ## Step 3. Microkinetic modeling
 
