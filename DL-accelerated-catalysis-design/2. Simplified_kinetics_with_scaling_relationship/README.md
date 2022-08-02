@@ -5,7 +5,7 @@ The reaction network of steam reforming of methanol (SRM) used for the microkine
 <p> <img src="./reaction_path.jpg" width="60%">  </p>
 The values in blue are rate constants. Based on the microkinetic model, we performed sensitivity analysis by computing the partial derivatives of the methanol conversion rate with respect to the rate constant of individual elementary reaction, and identified two rate determining steps (RDSs) that have partial derivatives greater than 0.01, as shown below. 
 
-<p> <img src="./sensitivity.jpg" width="60%">  </p>
+<p> <img src="./sensitivity.jpg" width="40%">  </p>
 We then constructed a simplified kinetic model in which only RDSs are considered as non-equilibrium reactions. The python code of the simplified kinetic model is  [MSR_CSTR.py](./MSR_CSTR.py), the results of which agree well with those obtained with the microkinetic modeling based on the full reaction network.
 
 <p> <img src="./kinetics.jpg" width="60%">  </p>
