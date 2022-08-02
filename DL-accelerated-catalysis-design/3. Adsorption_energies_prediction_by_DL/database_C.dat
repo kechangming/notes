@@ -1,4 +1,4 @@
-Formula element1 element2 site_num sip sip_2 peg peg_2 v vs_2 ip ip_2 se pe de fe se_2 pe_2 de_2 fe_2 cr cr_2 p p_2   energy
+Formula element1 element2 site_num sip sip_2 peg peg_2 v vs_2 ip ip_2 se pe de fe se_2 pe_2 de_2 fe_2 cr cr_2 p p_2   energy   !!!! first line must delete for training !!!
 AgBe Ag Be 2 0.2408 0.2836 0.6542 0.8042 0.25 0.375 1.0 0.8127 1.0 0.0 0.0 0.0 0.0909 0.0 0.9091 0.0 0.4038 0.6154 0.3333 0.8333 -5.84345
 AgEr Er Ag 2 0.2836 0.1576 0.8042 0.5167 0.375 0.375 0.8127 0.6545 0.0909 0.0 0.9091 0.0 0.1429 0.0 0.0 0.8571 0.6154 0.6731 0.8333 1.0 -5.27761
 AgHo Ho Ag 2 0.2836 0.1562 0.8042 0.5125 0.375 0.375 0.8127 0.6456 0.0909 0.0 0.9091 0.0 0.1538 0.0 0.0 0.8462 0.6154 0.6731 0.8333 1.0 -5.30994
