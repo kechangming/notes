@@ -1,9 +1,3 @@
----
-title: simplified_kinetics
-created: '2022-07-18T02:20:44.542Z'
-modified: '2022-07-18T03:01:14.502Z'
----
-
 ## Step 1. Simplified kinetic model
 
 The reaction network of steam reforming of methanol (SRM) used for the microkinetic modeling is illustrated as below:
