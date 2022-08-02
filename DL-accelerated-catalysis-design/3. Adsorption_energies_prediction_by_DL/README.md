@@ -1,9 +1,3 @@
----
-title: Adsorption Energies Prediction by Deep Learning
-created: '2022-06-14T09:43:26.939Z'
-modified: '2022-07-18T03:32:09.947Z'
----
-
 # Adsorption Energy Prediction Assisted by Deep Learning
 ## Step 1. DFT database of adsorption energies
 The databases of C * and O* adsorption energies on CsCl-type binary alloys are provided as [database_C](./database_C.dat)  and [database_O](./database_O.dat), respectively.  
