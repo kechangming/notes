@@ -13,7 +13,6 @@ Here, $k_{\rm B}$ is the Boltzmann constant, $T$ the temperature, $h$ Planck's c
 
 For the vibrational partition function, a typical INCAR (input file of [VASP](https://www.vasp.at/wiki/index.php/The_VASP_Manual)) for vibrational frequency calculations is [INCAR_freq](./pre-exponent_factors/INCAR_freq), and the main output file is [freq.dat](./k_24.dat). The codes [prefactor_g++](./pre-exponent_factors/prefactor_g++) and [nonactive_prefactor_g++](./pre-exponent_factors/nonactive_prefactor_g++) can be used to calculate the pre-exponent factor directly from a [freq.dat](./k_24.dat) file. For example, we can obtain the temperature-dependent pre-exponent factors of ${\rm C^\*+O^\*\rightarrow CO^\* + ^\*}$ using [T_prefactor.sh](./T_prefactor.sh), reactants/[freq.dat](./freq_ini), and transition/[freq.dat](./freq_trans).
 
-<div align=center>
 | Temperature (K) | $A'\cdot T^b$ |
 |-------------|-------------|
 |673 | 3.31043e+13|
@@ -23,7 +22,7 @@ For the vibrational partition function, a typical INCAR (input file of [VASP](ht
 |873 | 3.36820e+13|
 |923 | 3.37836e+13|
 |973 | 3.38731e+13|
-</div>
+
 The temperature dependence of the pre-exponent factors is fitted as $A'\cdot T^b$.
 
 ## Step 3. Microkinetic modeling
