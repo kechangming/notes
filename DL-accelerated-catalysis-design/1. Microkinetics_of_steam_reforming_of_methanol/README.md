@@ -26,6 +26,7 @@ The temperature dependence of the pre-exponent factors is fitted as $A'\cdot T^b
 ## Step 3. Microkinetic modeling
 
 We use the rate constants of elementary reactions as inputs to construct an input file of CHEMKIN, [surf_e0](./input_of_chemkin/surf_e0). The reaction conditions are the same as the experimental conditions reported in [Liu _et al._](https://www.sciencedirect.com/science/article/pii/S0920586117305631?via%3Dihub): the feed rate is 10 min/cc and the catalyst surface area is about 0.14 $m^2$. A sample file including all other settings is supplied in [steam_methanol_reforming.ckprj](./input_of_chemkin/steam_methanol_reforming.ckprj). The results from the microkinetic modeling are in good agreement with experiments as shown in the following figure:
+
  ![](./microkinetics_vs_experiment.jpg).
 
 The CHEMKIN input files for the microkinetic modeling of SRM under specified electric fields are also supplied, and they are generated using the script [cheminp_out.sh](./cheminp_out.sh).
